@@ -1,18 +1,27 @@
 # BGP_path_hijack
+This is demo code for the BGP Hijacking lab from the mininet repository:
+<https://github.com/mininet/mininet/wiki/BGP-Path-Hijacking-Attack-Demo>
+
+This version is modified for running on ubuntu 22.04 by Humberto Ortiz-Zuazaga, it was first ported to mininet 2.3.0 by `spwpun`:
+<https://github.com/spwpun/BGP_Path_Hijack>.
+
 This repo is different from the `https://bitbucket.org/jvimal/bgp/src`, it is an upgradable version for `Mininet 2.3.0`, check it out!
 ## Envs
-- python3
+
+Install the following packages with apt:
+
 - mininet 2.3.0
 - frr
 - python3-termcolor
 - openvswitch-testcontroller
 
 ## Steps
-You should modify the bgp.py in line `147` and `149`, replace the zebra and bgpd's paths to your own!
+
+Follow the steps in the [mininet wiki](https://github.com/mininet/mininet/wiki/BGP-Path-Hijacking-Attack-Demo). You can skip Step 1, parts 1, 2, and 3. this repository replaces the virtual machine image and scripts described there.
+
 ```
-mininet@mininet-vm:$ git https://github.com/spwpun/BGP_Path_Hijack.git
+mininet@mininet-vm:$ git https://github.com/humberto-ortiz/BGP_Path_Hijack.git
 mininet@mininet-vm:$ cd BGP_Path_Hijack/
-# replace paths in bgp.py
 mininet@mininet-vm:$ sudo python3 bgp.py
 # new termial window, connect to S1 router, passwd is "en", type twice with [enter]
 mininet@mininet-vm:$ ./connect.sh

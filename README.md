@@ -3,6 +3,10 @@ This repo is different from the `https://bitbucket.org/jvimal/bgp/src`, it is an
 ## Envs
 - python3
 - mininet 2.3.0
+- frr
+- python3-termcolor
+- openvswitch-testcontroller
+
 ## Steps
 You should modify the bgp.py in line `147` and `149`, replace the zebra and bgpd's paths to your own!
 ```

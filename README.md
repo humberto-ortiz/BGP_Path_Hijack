@@ -19,8 +19,9 @@ Install the following packages with apt:
 
 Follow the steps in the [mininet wiki](https://github.com/mininet/mininet/wiki/BGP-Path-Hijacking-Attack-Demo). You can skip Step 1, parts 1, 2, and 3. this repository replaces the virtual machine image and scripts described there.
 
+In brief:
 ```
-mininet@mininet-vm:$ git https://github.com/humberto-ortiz/BGP_Path_Hijack.git
+mininet@mininet-vm:$ git clone https://github.com/humberto-ortiz/BGP_Path_Hijack.git
 mininet@mininet-vm:$ cd BGP_Path_Hijack/
 mininet@mininet-vm:$ sudo python3 bgp.py
 # new termial window, connect to S1 router, passwd is "en", type twice with [enter]

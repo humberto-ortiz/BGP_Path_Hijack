@@ -9,11 +9,15 @@ This repo is different from the `https://bitbucket.org/jvimal/bgp/src`, it is an
 ## Envs
 
 Install the following packages with apt:
-
-- mininet 2.3.0
-- frr
-- python3-termcolor
-- openvswitch-testcontroller
+```
+$ sudo apt update
+$ sudo apt install mininet frr python3-termcolor openvswitch-testcontroller
+```
+Then turn off and disable the openvswitch controller
+```
+$ sudo systemctl stop openvswitch-testcontroller
+$ sudo systemctl disable openvswitch-testcontroller
+```
 
 ## Steps
 
